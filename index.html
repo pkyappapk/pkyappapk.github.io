@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>pkyappapk - Unity Tools &amp; Games</title>
+  <meta name="description" content="pkyappapk is an independent developer of Unity editor tools, runtime systems, mobile games and web games.">
+  <style>
+    :root { --bg: #0f1115; --panel: #171a21; --line: #262b35; --text: #e3e7ee; --dim: #9aa3b2; --accent: #00c7ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    a { color: var(--accent); }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+    header { border-bottom: 1px solid var(--line); }
+    header .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .brand { font-weight: 700; font-size: 20px; color: var(--text); text-decoration: none; }
+    .brand span { color: var(--accent); }
+    nav a { color: var(--dim); text-decoration: none; margin-left: 22px; font-size: 15px; }
+    nav a:hover { color: var(--text); }
+    .hero { padding-top: 72px; padding-bottom: 56px; }
+    .hero h1 { font-size: 40px; line-height: 1.2; margin: 0 0 16px; }
+    .hero p { color: var(--dim); font-size: 18px; max-width: 640px; margin: 0 0 28px; }
+    .button { display: inline-block; padding: 11px 20px; border-radius: 6px; background: var(--accent); color: #031018; font-weight: 600; text-decoration: none; }
+    section { padding: 48px 0; border-top: 1px solid var(--line); }
+    h2 { font-size: 26px; margin: 0 0 8px; }
+    .lead { color: var(--dim); margin: 0 0 28px; }
+    .product { background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 10px; padding: 28px; }
+    .product h3 { margin: 0 0 4px; font-size: 22px; }
+    .tag { color: var(--accent); font-size: 14px; margin: 0 0 14px; }
+    .product ul { padding-left: 20px; margin: 14px 0 0; }
+    .product li { margin-bottom: 6px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 16px; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 20px; }
+    .card h3 { margin: 0 0 6px; font-size: 17px; }
+    .card p { margin: 0; color: var(--dim); font-size: 15px; }
+    .contact { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 28px; }
+    .contact p { margin: 0 0 10px; }
+    .email { font-size: 20px; font-weight: 600; }
+    footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--dim); font-size: 14px; }
+    @media (max-width: 720px) { .hero h1 { font-size: 30px; } nav a { margin-left: 14px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="#top">pkyappapk<span>.</span></a>
+      <nav>
+        <a href="#products">Products</a>
+        <a href="#services">What we do</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="wrap hero">
+      <h1>Unity tools and games,<br>built by an independent developer.</h1>
+      <p>pkyappapk develops and distributes mobile games, web games and the software that game projects need: Unity editor tools, runtime systems and content pipelines written in C#.</p>
+      <a class="button" href="#contact">Get in touch</a>
+    </div>
+
+    <section id="products">
+      <div class="wrap">
+        <h2>Products</h2>
+        <p class="lead">Tools we build for Unity developers.</p>
+
+        <article class="product">
+          <h3>AI Customizer</h3>
+          <p class="tag">Unity tool - Runtime character body customization</p>
+          <p>Turns a rigged character into a customizable one in a single click. Players adjust height, chest, waist, hips, head and jaw with auto-generated sliders, and equipped outfits stretch together with the body.</p>
+          <ul>
+            <li>One-click editor pipeline: drop a character, press Run, get a ready-to-use prefab.</li>
+            <li>Skeleton-hierarchy analysis in pure C#: no server, no ML model, no GPU warm-up (11.9 ms for a 57-bone character).</li>
+            <li>Works with Humanoid and Generic rigs, including Mixamo naming.</li>
+            <li>Outfit fitting and a Skin Weight Transfer tool for unrigged clothing.</li>
+            <li>Auto-generated runtime slider UI with JSON preset save/load; runs in builds.</li>
+          </ul>
+        </article>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Local Animate AI</h3>
+            <p>2D auto-rigging and sprite animation tool for Unity.</p>
+          </div>
+          <div class="card">
+            <h3>BiomechVoice AI Studio</h3>
+            <p>Voice and audio tool for Unity projects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <h2>What we do</h2>
+        <p class="lead">Areas we work in every day.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>Unity editor tools</h3>
+            <p>Custom editor windows, asset pipelines and automation that save time in production.</p>
+          </div>
+          <div class="card">
+            <h3>Runtime systems</h3>
+            <p>Character customization, skinning and UI systems in C# that run on desktop, mobile and WebGL.</p>
+          </div>
+          <div class="card">
+            <h3>Mobile and web games</h3>
+            <p>Game development and distribution for Android and the web with Unity 6.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <p class="lead">Questions, bug reports or business inquiries are welcome.</p>
+        <div class="contact">
+          <p>Email</p>
+          <p class="email"><a href="mailto:rkddyd49@gmail.com">rkddyd49@gmail.com</a></p>
+          <p style="color:var(--dim);margin:0">For product support, please include your Unity version and a short description of the issue.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">&copy; 2026 pkyappapk. All rights reserved.</div>
+  </footer>
+</body>
+</html>
